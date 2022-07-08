@@ -10,7 +10,7 @@ const Header = () => {
     const [isActive, setIsActive] = useState(false)
 
     return (
-        <nav className='w-full h-16 flex items-center justify-between px-4'>
+        <nav className='w-full h-16 flex items-center justify-between px-5'>
             <a href="./"><img src={logo} className='w-8 cursor-pointer' alt="Logo" /></a>
             <div className="w-28 flex justify-between items-center">
                 <BsBag size='27px'stroke='2px'/>
