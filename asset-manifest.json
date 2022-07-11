@@ -1,30 +1,32 @@
 {
   "files": {
-    "main.css": "/bennetts/static/css/main.da08dc9a.css",
-    "main.js": "/bennetts/static/js/main.27592451.js",
+    "main.css": "/bennetts/static/css/main.0fe436ac.css",
+    "main.js": "/bennetts/static/js/main.64bdd3ec.js",
     "static/js/787.79e0b5b2.chunk.js": "/bennetts/static/js/787.79e0b5b2.chunk.js",
     "static/media/nike5.jpg": "/bennetts/static/media/nike5.4aa91f8ec0faa6cf3d66.jpg",
     "static/media/logo.png": "/bennetts/static/media/logo.42fe79817d6233527e25.png",
-    "static/media/nike2.jpg": "/bennetts/static/media/nike2.6efa4acf978c9e0f0511.jpg",
-    "static/media/newsletterBg.jpg": "/bennetts/static/media/newsletterBg.cf78c3d867160340ed53.jpg",
-    "static/media/nike3.jpg": "/bennetts/static/media/nike3.2a02e2d709c7003971d8.jpg",
+    "static/media/hero-desktop.jpg": "/bennetts/static/media/hero-desktop.100d36b4b298d767d09f.jpg",
+    "static/media/hero-mobile1.jpg": "/bennetts/static/media/hero-mobile1.d2e0499b5a1be02e1db1.jpg",
+    "static/media/hero-tablet.jpg": "/bennetts/static/media/hero-tablet.af7eb652841820cbec92.jpg",
+    "static/media/newsletterBg.webp": "/bennetts/static/media/newsletterBg.5f8b89954f40f5d3f7c9.webp",
     "static/media/nike4.jpg": "/bennetts/static/media/nike4.682e624025746b8fac53.jpg",
-    "static/media/nike1.jpg": "/bennetts/static/media/nike1.e530d9edbfdff18faca8.jpg",
+    "static/media/nike2.jpg": "/bennetts/static/media/nike2.e4f8bf28ff3f277d8600.jpg",
     "static/media/shoe3.webp": "/bennetts/static/media/shoe3.ec851f8987c1be43d270.webp",
+    "static/media/shoe4.webp": "/bennetts/static/media/shoe4.6adf19ef7f9a542fb37a.webp",
+    "static/media/nike3.webp": "/bennetts/static/media/nike3.c6636f2fb6bb98da2481.webp",
     "static/media/shoe2.webp": "/bennetts/static/media/shoe2.7e6a4972a0d159b1fdba.webp",
-    "static/media/shoe1.jpg": "/bennetts/static/media/shoe1.f2e28ff1305e410e0b56.jpg",
-    "static/media/shoe1.webp": "/bennetts/static/media/shoe1.19acd4869270650df51a.webp",
+    "static/media/shoe1.webp": "/bennetts/static/media/shoe1.b727159e0da7d3259572.webp",
     "static/media/slick.svg": "/bennetts/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/bennetts/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/bennetts/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/bennetts/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/bennetts/index.html",
-    "main.da08dc9a.css.map": "/bennetts/static/css/main.da08dc9a.css.map",
-    "main.27592451.js.map": "/bennetts/static/js/main.27592451.js.map",
+    "main.0fe436ac.css.map": "/bennetts/static/css/main.0fe436ac.css.map",
+    "main.64bdd3ec.js.map": "/bennetts/static/js/main.64bdd3ec.js.map",
     "787.79e0b5b2.chunk.js.map": "/bennetts/static/js/787.79e0b5b2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.da08dc9a.css",
-    "static/js/main.27592451.js"
+    "static/css/main.0fe436ac.css",
+    "static/js/main.64bdd3ec.js"
   ]
 }
