@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Button = ({ width, margin, name, color, bg }) => {
+const Button = ({ name, style }) => {
     return (
         <button
-            className={`${width} h-10 ${margin} ${color} ${bg} text-sm rounded-full`}
+            className={`${style} h-10 text-sm font-semibold rounded-full`}
         >
             <p>{name}</p>
         </button>

@@ -1,5 +1,5 @@
 import sportswearImg from '../../assets/images/nike2.jpg'
-import footwearImg from '../../assets/images/nike3.jpg'
+import footwearImg from '../../assets/images/nike3.webp'
 import outfitImg from '../../assets/images/nike4.jpg'
 import shoe1 from '../../assets/images/shoe1.webp'
 import shoe2 from '../../assets/images/shoe2.webp'

@@ -7,7 +7,7 @@ import './Contacts.css'
 
 
 const Contacts = () => {
- 
+
     return (
         <div className='flex flex-col items-center my-24'>
             <a href="./"><img src={logo} className='w-8 cursor-pointer mb-3' alt="Logo" /></a>
@@ -28,10 +28,9 @@ const Contacts = () => {
             </div>
             <div className="newsletter w-full mt-28 relative text-white">
                 <div>
-                    <div className={`nlBackground w-full h-[18rem]`}>
-
+                    <div className={`nlBackground w-full h-80`}>
+                        <img src={newsletterBg} alt="newsletter" className='w-full h-full object-cover object-bottom    ' />
                     </div>
-                    {/* <img src={newsletterBg} alt="newsletter" className='h-80'/> */}
                     <div className='absolute left-4 bottom-4'>
                         <p className='text-sm'>Newsletter Signup</p>
                         <h2 className='text-lg font-semibold leading-5'>LET’S STAY IN TOUCH</h2>
