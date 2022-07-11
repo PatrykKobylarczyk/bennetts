@@ -1,10 +1,10 @@
 import sportswearImg from '../../assets/images/nike2.jpg'
 import footwearImg from '../../assets/images/nike3.jpg'
 import outfitImg from '../../assets/images/nike4.jpg'
-import shoe1 from '../../assets/images/shoe1.jpg'
-import shoe2 from '../../assets/images/shoe1.webp'
-import shoe3 from '../../assets/images/shoe2.webp'
-import shoe4 from '../../assets/images/shoe3.webp'
+import shoe1 from '../../assets/images/shoe1.webp'
+import shoe2 from '../../assets/images/shoe2.webp'
+import shoe3 from '../../assets/images/shoe3.webp'
+import shoe4 from '../../assets/images/shoe4.webp'
 
 export const categories = [
     {

@@ -1,0 +1,6 @@
+.nlBackground{
+    background-image: url('../../assets/images/newsletterBg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}

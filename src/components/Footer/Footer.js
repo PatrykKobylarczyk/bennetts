@@ -6,7 +6,7 @@ import { AiOutlinePlus } from 'react-icons/ai';
 
 const Footer = () => {
 
-    const categoryLinks = categories.map(category => <li className='text-xl mb-5'><a href=''>{category.name}</a></li>)
+    const categoryLinks = categories.map(category => <li key={category.id} className='text-xl mb-5'><a href=''>{category.name}</a></li>)
 
     return (
         <>
