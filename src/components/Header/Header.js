@@ -1,30 +1,19 @@
-import React, { useState } from 'react';
-import { Spin } from 'react-burgers';
-import { FiSearch } from 'react-icons/fi';
-import { BsBag } from 'react-icons/bs';
+import React from 'react';
 
 import logo from "../../assets/images/logo.png"
 
-const Header = () => {
+import DesktopMenu from './DesktopMenu';
+import MobileMenu from './MobileMenu';
 
-    const [isActive, setIsActive] = useState(false)
+const Header = ({ isDesktop }) => {
 
     return (
-        <nav className='w-full h-16 flex items-center justify-between px-5'>
-            <a href="./"><img src={logo} className='w-8 cursor-pointer' alt="Logo" /></a>
-            <div className="w-28 flex justify-between items-center">
-                <BsBag size='27px'stroke='2px'/>
-                <FiSearch size='27px'/>
-                <Spin
-                    onClick={() => setIsActive(prev => !prev)}
-                    active={isActive}
-                    width={26}
-                    lineHeight={2}
-                    lineSpacing={8}
-                    borderRadius={2}
-                    padding='10px 0 0 0'
-                />
-            </div>
+        <nav className='w-full h-16 lg:h-24 flex items-center justify-between px-5 lg:px-16'>
+            <a href="./"><img src={logo} className='w-8 lg:w-12 cursor-pointer' alt="Logo" /></a>
+            {isDesktop
+                ? <DesktopMenu />
+                : <MobileMenu />
+            }
         </nav>
     );
 }

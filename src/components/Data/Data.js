@@ -8,14 +8,17 @@ import shoe4 from '../../assets/images/shoe4.webp'
 
 export const categories = [
     {
+        id: 1,
         name: 'Sportswear',
         image: sportswearImg
     },
     {
+        id: 2,
         name: 'Footswear',
         image: footwearImg
     },
     {
+        id: 3,
         name: 'Outfit',
         image: outfitImg
     },
