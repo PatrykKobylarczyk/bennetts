@@ -1,8 +1,14 @@
 import React, { useState } from 'react';
 
+//DATA
 import { footerMenu } from '../Data/Data';
+
+//ICONS
 import { AiOutlinePlus, AiOutlineMinus } from 'react-icons/ai';
 import { BsInstagram, BsTwitter } from 'react-icons/bs';
+
+//ANIMATIONS
+import { motion, AnimatePresence } from "framer-motion"
 
 
 const FooterMobile = () => {
@@ -24,9 +30,56 @@ const FooterMobile = () => {
         }
     }
 
+    const showPanel = {
+        hidden: {
+            height: 0,
+            transition: {
+                duration: 0.2,
+                ease: 'linear',
+                delay: 0.2
+            },
+        },
+        show: {
+            height: "auto",
+            transition: {
+                duration: 0.2,
+                ease: 'linear'
+            },
+        },
+    };
+
+    const showLinks = {
+        hidden: {
+            opacity: 0,
+            transition: {
+                duration: 0.1,
+                ease: 'linear'
+            },
+        },
+        show: {
+            opacity: 1,
+            transition: {
+                duration: 0.1,
+                ease: 'linear'
+            },
+        },
+    };
+
     const footerMenuPanels = footerMenu.map(panel => {
 
-        const subMenuPanel = panel.subMenu && panel.subMenu.map(item => <li key={item.name} className='capitalize text-xs font-extralight text-white text-opacity-30 hover:text-opacity-100 transition duration-150 mt-3'><a href='#'>{item.name}</a></li>)
+        const subMenuPanel = panel.subMenu && panel.subMenu.map(item =>
+
+            <motion.li
+                key={item.name}
+                className='capitalize text-xs font-extralight text-white text-opacity-30 hover:text-opacity-100 transition duration-150 mt-3'
+                variants={showLinks}
+                initial='hidden'
+                animate='show'
+                exit='hidden'
+            >
+                <a href='#'>{item.name}</a>
+            </motion.li>
+        )
 
         return (
             <div
@@ -36,13 +89,21 @@ const FooterMobile = () => {
                 onClick={() => openPanelHandler(panel.id)}>
                 <div className='w-full flex justify-between items-center'>
                     <ul >{panel.name}</ul>
-                    {panel.name === open  ? <AiOutlineMinus /> : <AiOutlinePlus />}
+                    {panel.name === open ? <AiOutlineMinus /> : <AiOutlinePlus />}
                 </div>
-                {panel.name === open &&
-                    <ul className='mt-3'>
-                        {subMenuPanel}
-                    </ul>
-                }
+                <AnimatePresence>
+                    {panel.name === open &&
+                        <motion.ul
+                            className='mt-3'
+                            variants={showPanel}
+                            initial='hidden'
+                            animate='show'
+                            exit='hidden'
+                        >
+                            {subMenuPanel}
+                        </motion.ul>
+                    }
+                </AnimatePresence>
             </div>
         )
     })
@@ -57,7 +118,7 @@ const FooterMobile = () => {
                 <span className='w-8 h-8 rounded-full bg-white bg-opacity-30 hover:bg-opacity-100 transition duration-150 cursor-pointer text-[#0a0a0a] flex justify-center items-center'><BsTwitter /></span>
             </div>
             <h3 className='text-xs text-center opacity-30'>© 2022 Bennetts. All rights reserved</h3>
-        </section>
+        </section >
     );
 }
 
