@@ -10,7 +10,7 @@ const Category = ({ image, name }) => {
                 <h2 className='absolute left-5 bottom-20 text-lg font-semibold text-white'>{name}</h2>
                 <Button
                     name='Shop now'
-                    style={'w-2/5 mb-12 text-black bg-white absolute left-5 -bottom-4'}
+                    styles={'w-2/5 mb-12 text-black bg-white absolute left-5 -bottom-4'}
                 />
             </div>
         </>

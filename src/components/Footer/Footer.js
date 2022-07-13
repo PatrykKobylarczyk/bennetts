@@ -1,30 +1,44 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-import { categories } from '../Data/Data';
+import { motion } from "framer-motion"
+
+import { footerMenu } from '../Data/Data';
 import { AiOutlinePlus } from 'react-icons/ai';
+import { BsInstagram, BsTwitter} from 'react-icons/bs';
+import FooterDesktop from './FooterDesktop';
 
+//DATA
 
 const Footer = () => {
 
-    const categoryLinks = categories.map(category => <li key={category.id} className='text-xl mb-5 lg:mb-7 xl:mb-9 lg:text-2xl 2xl:text-3xl'><a href=''>{category.name}</a></li>)
+    // const [open, setOpen] = useState(false)
+
+    // const variants = {
+    //     open: { heigth: '100%' },
+    //     closed: { heigth: '0%' },
+    // }
+
+    const footerMenuPanels = footerMenu.map((panel, i) => {
+        return <div id={i} key={i} className='w-full border-2 border-red-500 flex justify-between p-3' onClick={id=> console.log(id)}><ul >{panel.name}</ul><AiOutlinePlus/></div>
+    })
 
     return (
         <>
-            <section className='mt-[12rem] lg:mt-[20rem] xl:mt-[25rem] mb-12 px-5 '>
-                <ul >
-                    {categoryLinks}
-                </ul>
+            <section className='bg-[#0a0a0a] w-full p-5 flex'>
+                <div className='w-3/5 '>
+                    <div className='w-full flex flex-col text-white lg:text-sm xl:text-lg '>
+                        {footerMenuPanels}
+                    </div>
+
+                </div>
+                <div className='w-2/5 flex justify-center'>
+                    <span className='w-8 h-8 rounded-full bg-white bg-opacity-30 hover:bg-opacity-100 transition duration-150 cursor-pointer text-[#0a0a0a] flex justify-center items-center mr-4'><BsInstagram /></span>
+                    <span className='w-8 h-8 rounded-full bg-white bg-opacity-30 hover:bg-opacity-100 transition duration-150 cursor-pointer text-[#0a0a0a] flex justify-center items-center'><BsTwitter/></span>
+                </div>
             </section>
-            <section className='bg-[#1f1f1f] w-full h-64 p-5'>
-                <ul className='w-full md:w-1/2 lg:w-1/3 xl:w-1/4 h-full uppercase text-white font-semibold lg:text-lg xl:text-xl flex flex-col justify-around'>
-                    <li className='flex justify-between'><h2>help</h2><AiOutlinePlus/></li>
-                    <li className='flex justify-between'><h2>shipping</h2><AiOutlinePlus/></li>
-                    <li className='flex justify-between'><h2>customer service</h2><AiOutlinePlus/></li>
-                    <li className='flex justify-between'><h2>contacts</h2><AiOutlinePlus/></li>
-                </ul>
-            </section>
+            {/* <FooterDesktop/> */}
         </>
-    );
+    )
 }
 
 export default Footer;

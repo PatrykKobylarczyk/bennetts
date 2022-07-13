@@ -22,8 +22,8 @@ function App() {
         isTablet={isTablet}
         isDesktop={isDesktop}
       />
-      <Contacts />
-      <Footer />
+      <Contacts isDesktop={isDesktop} />
+      <Footer isDesktop={isDesktop} />
     </div>
   );
 }
