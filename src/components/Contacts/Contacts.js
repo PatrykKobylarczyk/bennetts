@@ -23,7 +23,7 @@ const Contacts = ({ isDesktop }) => {
                             <h2 className='text-lg lg:text-xl xl:text-2xl font-semibold leading-5'>LET’S STAY IN TOUCH</h2>
                         </div>
                         <form className='px-5 lg:px-0 w-11/12 border-b-2 border-gray-200 flex justify-between py-3 mt-6 lg:mt-7 xl:mt-8 mx-auto'>
-                            <input type='text' placeholder='EMAIL' className='md:text-sm lg:text-base w-full bg-transparent'></input>
+                            <input type='email' placeholder='EMAIL' className='md:text-sm lg:text-base w-full bg-transparent'></input>
                             <button type='submit' className='text-gray-400 md:text-sm lg:text-base'>OK</button>
                         </form>
                     </div>

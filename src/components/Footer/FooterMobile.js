@@ -36,7 +36,7 @@ const FooterMobile = () => {
             transition: {
                 duration: 0.2,
                 ease: 'linear',
-                delay: 0.2
+                
             },
         },
         show: {
@@ -114,8 +114,8 @@ const FooterMobile = () => {
                 {footerMenuPanels}
             </div>
             <div className='w-full flex justify-start px-2 py-10'>
-                <span className='w-8 h-8 rounded-full bg-white bg-opacity-30 hover:bg-opacity-100 transition duration-150 cursor-pointer text-[#0a0a0a] flex justify-center items-center mr-4'><BsInstagram /></span>
-                <span className='w-8 h-8 rounded-full bg-white bg-opacity-30 hover:bg-opacity-100 transition duration-150 cursor-pointer text-[#0a0a0a] flex justify-center items-center'><BsTwitter /></span>
+                <span className='w-8 h-8 rounded-full bg-white bg-opacity-30 hover:bg-opacity-100 transition duration-150 cursor-pointer text-[#0a0a0a] flex justify-center items-center mr-4'><a href='https://www.instagram.com/bennetts_/'><BsInstagram /></a></span>
+                <span className='w-8 h-8 rounded-full bg-white bg-opacity-30 hover:bg-opacity-100 transition duration-150 cursor-pointer text-[#0a0a0a] flex justify-center items-center'><a href='https://twitter.com/bennetts_/'><BsTwitter /></a></span>
             </div>
             <h3 className='text-xs text-center opacity-30'>© 2022 Bennetts. All rights reserved</h3>
         </section >
