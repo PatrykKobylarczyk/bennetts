@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useMediaQuery } from 'react-responsive'
 
 import './App.css';
@@ -8,15 +8,18 @@ import Contacts from './components/Contacts/Contacts';
 import Footer from './components/Footer/Footer';
 
 function App() {
+  const [menuActive, setMenuActive] = useState(false)
 
   const isTablet = useMediaQuery({ query: '(min-device-width: 768px)' })
   const isDesktop = useMediaQuery({ query: '(min-device-width: 1024px)' })
 
   return (
-    <div className="app w-full">
+    <div className={`w-full ${menuActive && 'overflow-hidden'}`}>
       <Header
         isTablet={isTablet}
         isDesktop={isDesktop}
+        menuActive={menuActive}
+        setMenuActive={setMenuActive}
       />
       <Main
         isTablet={isTablet}

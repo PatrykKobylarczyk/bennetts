@@ -19,7 +19,7 @@ const Carousel = () => {
   const settings = {
     className: 'w-full',
     infinite: false,
-    speed: 300,
+    speed: 500,
     slidesToShow: 4.3,
     slidesToScroll: 1,
     arrows: false,
