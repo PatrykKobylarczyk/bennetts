@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 //DATA
 import { categories } from '../Data/Data';
@@ -13,9 +14,16 @@ import { motion } from "framer-motion"
 
 
 
-const Menu = ({ menuActive }) => {
+const Menu = ({ menuActive, setMenuActive }) => {
 
-    const menu = categories.map(category => <li key={category.id} className='cursor-pointer leading-10 text-lg'>{category.name}</li>)
+    const menu = categories.map(category =>
+        <li
+            key={category.id}
+            className='cursor-pointer leading-10 text-lg'
+            onClick={()=>setMenuActive(prev=>!prev)}
+        >
+            <Link to={category.path} >{category.name}</Link>
+        </li>)
 
     const variants = {
         open: { x: '-100%' },

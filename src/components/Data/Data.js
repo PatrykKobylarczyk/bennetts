@@ -13,22 +13,26 @@ export const categories = [
     {
         id: 0,
         name: 'Home',
-        image: ''
+        image: '',
+        path: '/bennetts'
     },
     {
         id: 1,
         name: 'Sportswear',
-        image: sportswearImg
+        image: sportswearImg,
+        path: '/bennetts/inprogress'
     },
     {
         id: 2,
         name: 'Footswear',
-        image: footwearImg
+        image: footwearImg,
+        path: '/bennetts/inprogress'
     },
     {
         id: 3,
         name: 'Outfit',
-        image: outfitImg
+        image: outfitImg,
+        path: '/bennetts/inprogress'
     },
 ]
 
