@@ -11,6 +11,7 @@ const Category = ({ image, name }) => {
                 <Button
                     name='Shop now'
                     styles={'w-2/5 mb-12 text-black bg-white absolute left-5 -bottom-4'}
+                    path='/bennetts/inprogress'
                 />
             </div>
         </>

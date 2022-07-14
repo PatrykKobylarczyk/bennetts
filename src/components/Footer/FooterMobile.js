@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'
 
 //DATA
 import { footerMenu } from '../Data/Data';
@@ -71,13 +72,13 @@ const FooterMobile = () => {
 
             <motion.li
                 key={item.name}
-                className='capitalize text-xs font-extralight text-white text-opacity-30 hover:text-opacity-100 transition duration-150 mt-3'
+                className='capitalize text-xs font-extralight text-white text-opacity-40 hover:text-opacity-100 transition duration-150 mt-3'
                 variants={showLinks}
                 initial='hidden'
                 animate='show'
                 exit='hidden'
             >
-                <a href='#'>{item.name}</a>
+                <Link to={item.path} key={item.name}>{item.name}</Link>
             </motion.li>
         )
 
@@ -94,7 +95,7 @@ const FooterMobile = () => {
                 <AnimatePresence>
                     {panel.name === open &&
                         <motion.ul
-                            className='mt-3'
+                            className='m-3'
                             variants={showPanel}
                             initial='hidden'
                             animate='show'

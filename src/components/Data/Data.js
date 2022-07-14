@@ -14,7 +14,8 @@ export const categories = [
         id: 0,
         name: 'Home',
         image: '',
-        path: '/bennetts'
+        path: '/bennetts/',
+        onclick: () => window.scrollTo({top: 0, left: 0, behavior: 'smooth' })
     },
     {
         id: 1,
@@ -88,19 +89,19 @@ export const footerMenu = [
         subMenu: [
             {
                 name: 'become a member',
-                path: '/member'
+                path: '/bennetts/inprogress'
             },
             {
                 name: 'bennetts journal',
-                path: '/vouchers'
+                path: '/bennetts/inprogress'
             },
             {
                 name: 'gift vouchers',
-                path: '/vouchers'
+                path: '/bennetts/inprogress'
             },
             {
                 name: 'promotional codes',
-                path: '/codes'
+                path: '/bennetts/inprogress'
             }
         ]
     },
@@ -110,23 +111,23 @@ export const footerMenu = [
         subMenu: [
             {
                 name: 'order status',
-                path: '/order-status'
+                path: '/bennetts/inprogress'
             },
             {
                 name: 'delivery',
-                path: '/delivery'
+                path: '/bennetts/inprogress'
             },
             {
                 name: 'returns',
-                path: '/returns'
+                path: '/bennetts/inprogress'
             },
             {
                 name: 'payment options',
-                path: '/payment'
+                path: '/bennetts/inprogress'
             },
             {
                 name: 'contacts',
-                path: '/contacts'
+                path: '/bennetts/inprogress'
             },
 
         ]
@@ -137,19 +138,19 @@ export const footerMenu = [
         subMenu: [
             {
                 name: 'news',
-                path: '/news'
+                path: '/bennetts/inprogress'
             },
             {
                 name: 'career',
-                path: '/career'
+                path: '/bennetts/inprogress'
             },
             {
                 name: 'sustainability',
-                path: '/sustainability'
+                path: '/bennetts/inprogress'
             },
             {
                 name: 'investors',
-                path: '/investors'
+                path: '/bennetts/inprogress'
             }
         ]
     },

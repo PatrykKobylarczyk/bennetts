@@ -54,7 +54,11 @@ const Main = ({ isTablet, isDesktop }) => {
                         <img className='w-full h-full absolute top-0 left-0 object-cover -z-10' src={shopnow} alt="shop now" />
                     </div>
                     <div className='w-full absolute bottom-10 right-10 md:right-20'>
-                        <Button styles='w-2/5 text-black bg-white lg:w-1/4' name='Shop now' />
+                        <Button
+                            styles='w-2/5 text-black bg-white lg:w-1/4'
+                            name='Shop now'
+                            path='/bennetts/product'
+                        />
                     </div>
                 </div>
                 {isDesktop &&
