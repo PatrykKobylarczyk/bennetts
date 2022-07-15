@@ -24,7 +24,7 @@ const Main = ({ isTablet, isDesktop }) => {
 
         <div className="w-full lg:px-16">
             {/* HERO SECTION */}
-            <section className='w-full h-auto lg:flex main pb-5 px-5 lg:px-0 md:relative '>
+            <section className='w-full lg:flex pb-5 px-5 lg:px-0 md:relative '>
                 <HeroImage isTablet={isTablet} isDesktop={isDesktop} />
                 <Headings isDesktop={isDesktop} />
             </section>
