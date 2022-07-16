@@ -17,7 +17,6 @@ const DesktopMenu = () => {
     return (
         <div className="w-2/3 flex justify-between items-center">
             <ul className='w-1/2 flex justify-around text-md xl:text-lg'>
-                <li><strong>Home</strong></li>
                 {menu}
             </ul>
             <div className='flex items-center'>

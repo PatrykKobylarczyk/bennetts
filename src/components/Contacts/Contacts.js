@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 import './Contacts.css'
 import Video from '../Video/Video'
 import SocialMedia from './SocialMedia';
