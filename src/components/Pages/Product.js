@@ -85,10 +85,10 @@ const Product = () => {
                 <button className='w-1/3 flex justify-center items-center focus:border-[1px] focus:border-gray-400 rounded-lg'><p className='text-center '>Choose Another product</p></button>
             </div>
             <div>
-                <select>
+                {/* <select>
                     <option value="">Select size</option>
                     {sizes}
-                </select>
+                </select> */}
             </div>
         </div>
     );

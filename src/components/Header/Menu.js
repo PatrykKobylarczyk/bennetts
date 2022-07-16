@@ -11,9 +11,6 @@ import { BsInstagram, BsTwitter } from 'react-icons/bs';
 import { motion } from "framer-motion"
 
 
-
-
-
 const Menu = ({ menuActive, setMenuActive }) => {
 
     const menu = categories.map(category =>
