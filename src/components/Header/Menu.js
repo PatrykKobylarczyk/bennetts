@@ -32,7 +32,7 @@ const Menu = ({ menuActive, setMenuActive }) => {
             animate={menuActive ? "open" : "closed"}
             variants={variants}
             transition={{ ease: 'easeInOut' }}
-            className='w-full h-[100vh] fixed flex flex-col justify-center items-center bg-white -right-full z-20'>
+            className='w-full h-[100vh] fixed flex flex-col justify-center items-center bg-white top-0 -right-full z-20'>
             <ul className='flex flex-col'>
                 {menu}
             </ul>
