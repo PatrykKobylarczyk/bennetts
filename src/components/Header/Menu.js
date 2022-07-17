@@ -17,7 +17,7 @@ const Menu = ({ menuActive, setMenuActive }) => {
         <li
             key={category.id}
             className='cursor-pointer leading-10 text-lg'
-            onClick={()=>setMenuActive(prev=>!prev)}
+            onClick={() => setMenuActive(prev => !prev)}
         >
             <Link to={category.path} >{category.name}</Link>
         </li>)
@@ -26,6 +26,7 @@ const Menu = ({ menuActive, setMenuActive }) => {
         open: { x: '-100%' },
         closed: { x: "0" },
     }
+
 
     return (
         <motion.div

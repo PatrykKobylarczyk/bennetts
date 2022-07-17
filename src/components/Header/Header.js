@@ -18,7 +18,7 @@ const Header = ({ isDesktop, menuActive, setMenuActive }) => {
                     setMenuActive={setMenuActive}
                 />
             }
-            <Menu menuActive={menuActive}/>
+            <Menu menuActive={menuActive} setMenuActive={setMenuActive}/>
         </nav>
     );
 }
