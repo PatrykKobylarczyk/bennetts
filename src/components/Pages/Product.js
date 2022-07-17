@@ -8,15 +8,26 @@ import Slider from "react-slick";
 //COMPONENTS
 import GetFetchingData from '../Data/GetFetchingData';
 
+//ICONS
+import { MdKeyboardArrowRight } from 'react-icons/md';
+
 //DATA
 import { products, sizeTable } from '../Data/Products';
+
+//ANIMATIONS
+import { motion, AnimatePresence } from "framer-motion"
 
 const Product = () => {
 
     const [selectedVariant, setSelectedVariant] = useState(0)
+    const [selectedSize, setSelectedSize] = useState(null)
+    const [isSizePanelOpened, setIsSizePanelOpened] = useState(false)
 
     const selectVariantHandler = (id) => {
         setSelectedVariant(id)
+    }
+    const selectSizeHandler = (id) => {
+        setSelectedSize(id)
     }
 
 
@@ -57,13 +68,56 @@ const Product = () => {
         )
     })
 
+    const showPanel = {
+        hidden: {
+            height: 0,
+            transition: {
+                duration: 0.2,
+                ease: 'linear',
+                delay: 0.2
+            },
+        },
+        show: {
+            height: "auto",
+            transition: {
+                duration: 0.2,
+                ease: 'linear'
+            },
+        },
+    };
+
+    const showSizes = {
+        hidden: {
+            opacity: 0,
+            transition: {
+                duration: 0.2,
+                ease: 'linear'
+            },
+        },
+        show: {
+            opacity: 1,
+            transition: {
+                duration: 0.2,
+                ease: 'linear',
+                delay: 0.2
+            },
+        },
+    };
+
     const sizes = sizeTable.map((size, i) => {
-        <option
-            key={i}
-            value={size}
-            className='w-1/3 h-20 border-[1px] border-gray-400 rounded-lg'
-        >{size}
-        </option>
+        return (
+            <motion.li
+                id={i}
+                key={i}
+                className='h-8 text-xs flex justify-center items-center border-[1px] border-gray-200 rounded-lg hover:border-gray-400 hover:cursor-pointer'
+                onClick={() => selectSizeHandler(size)}
+                variants={showSizes}
+                initial='hidden'
+                animate='show'
+                exit='hidden'
+            >{size}
+            </motion.li>
+        )
     })
 
 
@@ -82,13 +136,33 @@ const Product = () => {
             </Slider>
             <div className='flex gap-3 h-auto mt-1'>
                 {chooseVariant}
-                <button className='w-1/3 flex justify-center items-center focus:border-[1px] focus:border-gray-400 rounded-lg'><p className='text-center '>Choose Another product</p></button>
+                <button
+                    className='w-1/3 flex justify-center items-center focus:border-[1px] focus:border-gray-400 rounded-lg p-5'
+                >
+                    <p className='text-center text-xs text-gray-500'>Choose Another product</p>
+                </button>
             </div>
-            <div>
-                {/* <select>
-                    <option value="">Select size</option>
-                    {sizes}
-                </select> */}
+            <div
+                className='w-full flex flex-col items-center border-y-[1px] border-gray-200  py-4 my-4'
+                onClick={() => setIsSizePanelOpened(prev => !prev)}
+            >
+
+                <div className='w-[120px] flex justify-between items-center'>
+                    <h2 className='text-sm text-gray-500'>Select size</h2>
+                    <MdKeyboardArrowRight className='text-gray-500' />
+                </div>
+                <AnimatePresence>
+                    {isSizePanelOpened &&
+                        <motion.ul
+                            className='w-full grid grid-cols-4 gap-2 mt-5 p-5'
+                            variants={showPanel}
+                            initial='hidden'
+                            animate='show'
+                            exit='hidden'
+                        >
+                            {sizes}
+                        </motion.ul>}
+                </AnimatePresence>
             </div>
         </div>
     );
