@@ -20,7 +20,7 @@ const ProductVariant = ({ products, selectVariantHandler}) => {
     })
 
     return (
-        <div className='flex gap-3 h-auto mt-1'>
+        <div className='flex gap-3 h-auto my-1 mx-3 lg:mx-0'>
             {chooseVariant}
             <button
                 className='w-1/3 flex justify-center items-center focus:border-[1px] focus:border-gray-400 rounded-lg p-5'

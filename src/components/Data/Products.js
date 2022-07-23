@@ -28,8 +28,16 @@ export const products = {
             id: 0,
             name: 'Nike React Vision',
             variant: {
-                color: 'Wolf Grey',
+                colour: 'Wolf Grey/Cool Grey/Pink Prime/Black',
                 images: [rvwg1, rvwg2, rvwg3, rvwg4, rvwg5, rvwg6, rvwg7, rvwg8],
+            },
+            details: {
+                title: 'SURREAL COMFORT.',
+                description: 'The D/MS/X collection is a story of surreal comfort. The layered structures, elegant lines and bright colors combine with a design inspired by the world of our dreams. The React foam and the ultra-soft tongue ensure a dreamlike wearing comfort. Off to dreamland - with the Nike React Vision.',
+                gender: 'Woman',
+                brand: 'Nike',
+                collection: 'React Vision',
+                technology: 'Air'
             }
     
         },
@@ -39,8 +47,15 @@ export const products = {
             variant: {
                 color: 'Pink Prime',
                 images: [rvpp1, rvpp2, rvpp3, rvpp4, rvpp5, rvpp6, rvpp7, rvpp8],
+            },
+            details: {
+                title: 'SURREAL COMFORT.',
+                description: 'The D/MS/X collection is a story of surreal comfort. The layered structures, elegant lines and bright colors combine with a design inspired by the world of our dreams. The React foam and the ultra-soft tongue ensure a dreamlike wearing comfort. Off to dreamland - with the Nike React Vision.',
+                gender: 'Woman',
+                brand: 'Nike',
+                collection: 'React Vision',
+                technology: 'Air'
             }
-    
         }
     ]
 }

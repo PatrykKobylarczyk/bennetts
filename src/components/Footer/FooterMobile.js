@@ -28,6 +28,10 @@ const FooterMobile = () => {
             case 3:
                 open === 'about' ? setOpen('') : setOpen('about')
                 break;
+            default:
+                console.log('Opss, I did it again...');
+                break;
+
         }
     }
 
@@ -53,7 +57,7 @@ const FooterMobile = () => {
         hidden: {
             opacity: 0,
             transition: {
-                duration: 0.1,
+                duration: 0,
                 ease: 'linear'
             },
         },

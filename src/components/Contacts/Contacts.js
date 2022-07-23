@@ -8,7 +8,7 @@ import Links from './Links';
 const Contacts = ({ isDesktop }) => {
 
     return (
-        <div className='flex flex-col items-center mt-24 mb-16 md lg:h-auto'>
+        <div className='w-full flex flex-col items-center mt-24 mb-16 md lg:h-auto'>
             {!isDesktop && <SocialMedia />}
             <div className="newsletter w-full text-black lg:flex">
                 <div className={`${isDesktop ? 'mt-0' : 'mt-[7rem]'} w-full lg:w-1/2`}>

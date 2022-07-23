@@ -9,8 +9,9 @@ const Home = ({ isTablet, isDesktop }) => {
         <>
             <Main
                 isTablet={isTablet}
-                isDesktop={isDesktop} />
-            <Contacts isDesktop={isDesktop}/>
+                isDesktop={isDesktop}
+            />
+            <Contacts isDesktop={isDesktop} />
         </>
     );
 }

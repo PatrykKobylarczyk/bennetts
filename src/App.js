@@ -12,6 +12,7 @@ import Home from './components/Pages/Home';
 import Product from './components/Pages/Product';
 import InProgress from './components/Pages/InProgress';
 import ErrorPage from './components/Pages/ErrorPage';
+import RetailersPage from './components/Pages/RetailersPage';
 
 //CLIENT FOR REACT-QUERY
 const queryClient = new QueryClient()
@@ -27,7 +28,7 @@ const App = () => {
     <QueryClientProvider client={queryClient}>
       <Router>
         <div
-          className={`w-full ${menuActive && 'overflow-hidden'}`}
+          className={`w-full  flex flex-col items-center`}
           name='top'
         >
           <Header
@@ -40,7 +41,12 @@ const App = () => {
             <Route
               exact
               path={'/bennetts/'}
-              element={<Home isTablet={isTablet} isDesktop={isDesktop} />}
+              element={
+                <Home
+                  isTablet={isTablet}
+                  isDesktop={isDesktop}
+                />
+              }
             />
             <Route
               path={'/bennetts/product'}
@@ -49,6 +55,10 @@ const App = () => {
             <Route
               path={'/bennetts/inprogress'}
               element={<InProgress />}
+            />
+            <Route
+              path={'/bennetts/retailer'}
+              element={<RetailersPage />}
             />
             <Route
               path={'/bennetts/*'}

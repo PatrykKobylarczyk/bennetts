@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 //ICONS
 import { MdKeyboardArrowRight } from 'react-icons/md';
@@ -16,10 +16,6 @@ const ProductSizes = () => {
         setSelectedSize(id)
     }
 
-    useEffect(()=>{
-        console.log(selectedSize);
-    }, [selectedSize])
-
     const sizes = sizeTable.map((size, i) => {
         return (
             <li
@@ -35,12 +31,12 @@ const ProductSizes = () => {
 
 
     return (
-        <div className='w-full flex flex-col items-center border-y-[1px] border-gray-200  py-4 my-4'>
+        <div className='w-full flex flex-col items-center border-y-[1px] border-gray-200  py-4 mt-8 mb-5'>
             <div
-                className='w-[120px] flex justify-between items-center'
+                className='w-[120px] flex justify-between items-center cursor-pointer'
                 onClick={() => setIsSizePanelOpened(prev => !prev)}
             >
-                <h2 className='text-sm text-gray-500'>Select size</h2>
+                <h2 className='text-sm text-gray-500 '>Select size</h2>
                 <MdKeyboardArrowRight className={`text-gray-500 ${isSizePanelOpened ? '-rotate-90' : 'rotate-90'} `} />
             </div>
             {isSizePanelOpened &&

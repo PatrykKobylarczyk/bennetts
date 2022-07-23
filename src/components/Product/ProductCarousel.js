@@ -5,7 +5,7 @@ const ProductCarousel = ({ selectedVariant, products }) => {
 
     //Carousel settings
     const settings = {
-        className: 'w-full h-auto',
+        className: 'w-full h-auto ',
         infinite: false,
         speed: 300,
         slidesToShow: 1,
@@ -15,8 +15,12 @@ const ProductCarousel = ({ selectedVariant, products }) => {
 
     const productCarousel = products.variants[selectedVariant].variant.images.map((image, i) => {
         return (
-            <div>
-                <img src={image} key={i} alt='Nike React Vision'></img>
+            <div key={i} className='w-full h-full'>
+                <img
+                    src={image}
+                    alt='Nike React Vision'
+                    className=' object-bottom'
+                ></img>
             </div>
         )
     })
