@@ -1,23 +1,27 @@
 {
   "files": {
-    "main.css": "/bennetts/static/css/main.4a32fd53.css",
-    "main.js": "/bennetts/static/js/main.2deb0c88.js",
+    "main.css": "/bennetts/static/css/main.27158aef.css",
+    "main.js": "/bennetts/static/js/main.c9b34b75.js",
     "static/js/787.79e0b5b2.chunk.js": "/bennetts/static/js/787.79e0b5b2.chunk.js",
     "static/media/video2.mp4": "/bennetts/static/media/video2.bf7498e450ca7c197f24.mp4",
     "static/media/video1.webm": "/bennetts/static/media/video1.1e0c50d78450e108269e.webm",
     "static/media/nike5.jpg": "/bennetts/static/media/nike5.4aa91f8ec0faa6cf3d66.jpg",
     "static/media/logo.png": "/bennetts/static/media/logo.42fe79817d6233527e25.png",
-    "static/media/hero-mobile1.jpg": "/bennetts/static/media/hero-mobile1.d2e0499b5a1be02e1db1.jpg",
+    "static/media/hero4dt.webp": "/bennetts/static/media/hero4dt.af0abc68a2b91c2d60dc.webp",
+    "static/media/hero2dt.webp": "/bennetts/static/media/hero2dt.04fda38455b6ea7cf747.webp",
     "static/media/7.jfif": "/bennetts/static/media/7.9892833f1aab0e4f4989.jfif",
-    "static/media/hero-tablet.jpg": "/bennetts/static/media/hero-tablet.af7eb652841820cbec92.jpg",
+    "static/media/hero1dt.webp": "/bennetts/static/media/hero1dt.5f4d0d89567590d3475a.webp",
+    "static/media/hero3dt.webp": "/bennetts/static/media/hero3dt.78d328fb1f628df5a128.webp",
     "static/media/nike4.jpg": "/bennetts/static/media/nike4.682e624025746b8fac53.jpg",
     "static/media/8.webp": "/bennetts/static/media/8.1df0a447314be7578032.webp",
     "static/media/nike2.jpg": "/bennetts/static/media/nike2.e4f8bf28ff3f277d8600.jpg",
     "static/media/4.webp": "/bennetts/static/media/4.e22d98892d0bd97d7c98.webp",
     "static/media/5.webp": "/bennetts/static/media/5.332c4760508b864e10d7.webp",
+    "static/media/hero4.webp": "/bennetts/static/media/hero4.21bcb1060f8209bc2c67.webp",
     "static/media/shoe3.webp": "/bennetts/static/media/shoe3.ec851f8987c1be43d270.webp",
     "static/media/1.webp": "/bennetts/static/media/1.113d72aa616ef2c725d4.webp",
     "static/media/shoe4.webp": "/bennetts/static/media/shoe4.6adf19ef7f9a542fb37a.webp",
+    "static/media/hero2.webp": "/bennetts/static/media/hero2.fc03a8ef23a2f302fe9e.webp",
     "static/media/3.webp": "/bennetts/static/media/3.b9ad72ab13dccb80ca66.webp",
     "static/media/nike3.webp": "/bennetts/static/media/nike3.c6636f2fb6bb98da2481.webp",
     "static/media/shoe7.webp": "/bennetts/static/media/shoe7.af9590d318ed52222f16.webp",
@@ -25,6 +29,8 @@
     "static/media/shoe6.webp": "/bennetts/static/media/shoe6.2670a9c8d78db3c352ea.webp",
     "static/media/6.webp": "/bennetts/static/media/6.c591adb9e0fff65096d7.webp",
     "static/media/shoe5.webp": "/bennetts/static/media/shoe5.4c24395c794bf62046a2.webp",
+    "static/media/hero1.webp": "/bennetts/static/media/hero1.4df2fd717a52689eda56.webp",
+    "static/media/hero3.webp": "/bennetts/static/media/hero3.1d7d4f11119b4cc3559b.webp",
     "static/media/shoe1.webp": "/bennetts/static/media/shoe1.b727159e0da7d3259572.webp",
     "static/media/2.webp": "/bennetts/static/media/2.373155fd80d37d3a519b.webp",
     "static/media/slick.svg": "/bennetts/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -32,12 +38,12 @@
     "static/media/slick.ttf": "/bennetts/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/bennetts/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/bennetts/index.html",
-    "main.4a32fd53.css.map": "/bennetts/static/css/main.4a32fd53.css.map",
-    "main.2deb0c88.js.map": "/bennetts/static/js/main.2deb0c88.js.map",
+    "main.27158aef.css.map": "/bennetts/static/css/main.27158aef.css.map",
+    "main.c9b34b75.js.map": "/bennetts/static/js/main.c9b34b75.js.map",
     "787.79e0b5b2.chunk.js.map": "/bennetts/static/js/787.79e0b5b2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a32fd53.css",
-    "static/js/main.2deb0c88.js"
+    "static/css/main.27158aef.css",
+    "static/js/main.c9b34b75.js"
   ]
 }
