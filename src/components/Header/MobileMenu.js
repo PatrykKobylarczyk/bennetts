@@ -9,7 +9,7 @@ const MobileMenu = ({ menuActive, setMenuActive }) => {
         <div className="w-28 flex justify-between items-center">
             <FiSearch size='27px' />
             <BsBag size='27px' stroke='2px' />
-            {/* <Spin
+            <Spin
                 className={`${menuActive ? 'fixed top-3 right-5' : ''} z-30`}
                 onClick={() => setMenuActive(prev => !prev)}
                 active={menuActive}
@@ -18,7 +18,7 @@ const MobileMenu = ({ menuActive, setMenuActive }) => {
                 lineSpacing={8}
                 borderRadius={2}
                 padding='10px 0 0 0'
-            /> */}
+            />
         </div>
     );
 }
