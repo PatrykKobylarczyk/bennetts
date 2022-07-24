@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 //DATA
 import { categories } from '../Data/Data';
@@ -14,13 +14,14 @@ import { motion } from "framer-motion"
 const Menu = ({ menuActive, setMenuActive }) => {
 
     const menu = categories.map(category =>
-        <li
+        <NavLink
+            to={category.path}
             key={category.id}
-            className='cursor-pointer leading-10 text-lg'
+            className='cursor-pointer leading-10 text-lg transition ease-in-out duration-100 hover:-translate-y-[1px]'
             onClick={() => setMenuActive(prev => !prev)}
         >
-            <Link to={category.path} >{category.name}</Link>
-        </li>)
+            {category.name}
+        </NavLink>)
 
     const variants = {
         open: { x: '-100%' },

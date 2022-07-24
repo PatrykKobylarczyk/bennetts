@@ -13,7 +13,15 @@ import { cards } from '../Data/Data';
 
 const Carousel = () => {
 
-  const displayCarouselSection = cards.map(card => <ShoeCard key={card.id} image={card.image} name={card.name} description={card.description} />)
+  const displayCarouselSection = cards.map(card =>
+    <ShoeCard
+      
+      key={card.id}
+      image={card.image}
+      name={card.name}
+      description={card.description}
+    />
+  )
 
   //Carousel settings
   const settings = {

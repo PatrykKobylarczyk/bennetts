@@ -1,14 +1,23 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom'
 
+//DATA
 import { categories } from '../Data/Data';
 
+//ICONS
 import { FiSearch } from 'react-icons/fi';
 import { BsBag } from 'react-icons/bs';
 import { BsSuitHeart } from 'react-icons/bs';
 
 const DesktopMenu = () => {
 
-    const menu = categories.map(category => <li key={category.id} className='cursor-pointer'>{category.name}</li>)
+    const menu = categories.map(category =>
+        <NavLink
+            to={category.path}
+            key={category.id}
+            className='transition ease-in-out duration-100 hover:-translate-y-[1px]'
+        >{category.name}
+        </NavLink>)
 
     const handleSubmit = () => {
         console.log('szukaj')

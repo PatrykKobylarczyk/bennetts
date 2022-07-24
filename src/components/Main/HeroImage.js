@@ -20,8 +20,8 @@ const HeroImage = ({ isDesktop }) => {
 
     const heroImagesMobile = [hero1mb, hero2mb, hero3mb, hero4mb]
     const heroImagesDesktop = [hero1dt, hero2dt, hero3dt, hero4dt]
-    const heroImageMobile = heroImagesMobile.map(image => <img className='w-full mb-5 h-full object-cover object-center' src={image} alt="nike shoes"></img>)
-    const heroImageDesktop = heroImagesDesktop.map(image => <img className='w-full mb-5 h-full object-cover object-center' src={image} alt="nike shoes"></img>)
+    const heroImageMobile = heroImagesMobile.map((image, i) => <img key={i} className='w-full mb-5 h-full object-cover object-center' src={image} alt="nike shoes"></img>)
+    const heroImageDesktop = heroImagesDesktop.map((image, i) => <img key={i} className='w-full mb-5 h-full object-cover object-center' src={image} alt="nike shoes"></img>)
 
     const settings = {
         className: 'flex',
