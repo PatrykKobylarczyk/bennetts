@@ -21,19 +21,22 @@ export const categories = [
         id: 1,
         name: 'Sportswear',
         image: sportswearImg,
-        path: '/bennetts/inprogress'
+        path: '/bennetts/inprogress',
+        onclick: () => window.scrollTo({top: 0, left: 0 })
     },
     {
         id: 2,
         name: 'Footswear',
         image: footwearImg,
-        path: '/bennetts/inprogress'
+        path: '/bennetts/inprogress',
+        onclick: () => window.scrollTo({top: 0, left: 0 })
     },
     {
         id: 3,
         name: 'Outfit',
         image: outfitImg,
-        path: '/bennetts/inprogress'
+        path: '/bennetts/inprogress',
+        onclick: () => window.scrollTo({top: 0, left: 0 })
     },
 ]
 

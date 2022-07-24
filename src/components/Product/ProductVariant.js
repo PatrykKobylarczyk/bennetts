@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ProductVariant = ({ products, selectVariantHandler}) => {
+const ProductVariant = ({ products, selectVariantHandler }) => {
 
     const chooseVariant = products.variants.map((variant, i) => {
         return (

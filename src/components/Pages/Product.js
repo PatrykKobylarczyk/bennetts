@@ -35,10 +35,17 @@ const Product = () => {
     const [thirdRetailer, setThirdRetailer] = useState()
 
     const [selectedVariant, setSelectedVariant] = useState(0)
+    const [selectedSize, setSelectedSize] = useState(4);
 
+    
     const selectVariantHandler = (id) => {
         setSelectedVariant(id)
     }
+
+    const selectSizeHandler = (size) => {
+        setSelectedSize(size)
+    }
+
 
     useEffect(() => {
         setFirstRetailer(checkApi(api1, productName, colour))
@@ -56,14 +63,18 @@ const Product = () => {
                     <ProductVariant selectVariantHandler={selectVariantHandler} products={products} />
                 </div>
                 <div className='h-full lg:w-1/2'>
-                    <ProductSizes />
+                    <ProductSizes
+                        selectedSize={selectedSize}
+                        selectSizeHandler={selectSizeHandler}
+                    />
                     <h2 className='px-5 mt-12 mb-3 text-sm'>order at</h2>
                     <ProductRetailers
                         firstRetailer={firstRetailer}
                         secondRetailer={secondRetailer}
                         thirdRetailer={thirdRetailer}
+                        selectedSize={selectedSize}
                     />
-                    <ProductDetailsPanel selectedVariant={selectedVariant} products={products}/>
+                    <ProductDetailsPanel selectedVariant={selectedVariant} products={products} />
 
                 </div>
             </div>
