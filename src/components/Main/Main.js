@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 //COMPONENTS
 import Button from '../Buttons/Button'
@@ -16,6 +16,8 @@ import Headings from './Headings';
 
 const Main = ({ isTablet, isDesktop }) => {
 
+    const [displayedImage, setDisplayedImage] = useState(0)
+
     const displayCategorySection = categories.slice(1).map(category => {
         return <Category key={category.name} image={category.image} name={category.name} />
     })
@@ -25,8 +27,15 @@ const Main = ({ isTablet, isDesktop }) => {
         <div className="w-full lg:px-16">
             {/* HERO SECTION */}
             <section className='w-full lg:flex pb-5 px-5 lg:px-0 md:relative '>
-                <HeroImage isTablet={isTablet} isDesktop={isDesktop} />
-                <Headings isDesktop={isDesktop} />
+                <HeroImage
+                    isTablet={isTablet}
+                    isDesktop={isDesktop}
+                    setDisplayedImage={setDisplayedImage}
+                />
+                <Headings
+                    isDesktop={isDesktop}
+                    displayedImage={displayedImage}
+                />
             </section>
 
             {/* CATEGORIES SECTION */}

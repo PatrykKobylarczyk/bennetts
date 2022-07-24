@@ -17,6 +17,7 @@ import rvpp7 from '../../assets/images/NikeReactVision/PinkPrime/7.jfif'
 import rvpp8 from '../../assets/images/NikeReactVision/PinkPrime/8.webp'
 
 
+
 export const sizeTable = [
     2.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 14, 15
 ]
@@ -39,7 +40,7 @@ export const products = {
                 collection: 'React Vision',
                 technology: 'Air'
             }
-    
+
         },
         {
             id: 1,
@@ -59,4 +60,33 @@ export const products = {
         }
     ]
 }
-    
+
+export const productsHero = [
+    {
+        brand: 'nike',
+        name: `NIKE AIR FORCE 1 '07'`,
+        category: `MEN'S SHOE`,
+        description: `The Nike Air Force 1 '07 has lost none of its charisma. The basketball original gets a fresh look and impresses with proven details: hard-wearing stitched overlays, a clean finish and that certain something that gives you shine.`
+    },
+    {
+        brand: 'nike',
+        name: `Air Jordan 1 Mid`,
+        category: `women's shoe`,
+        description: `The Air Jordan 1 Mid showcases all-round court style and premium comfort for a legendary look. The Air-Sole unit provides cushioning on hardwoods and the padded collar provides a supportive feel.`
+    },
+    {
+        brand: 'nike',
+        name: `Jordan Series ES`,
+        category: `men's shoe`,
+        description: `Inspired by Mike's backyard fights with his older brother Larry, the Jordan Series references the legendary sibling rivalry throughout the design. The rubber sole offers more than just impressive traction, it also tells a story about how Michael Jordan became the number 23. Search for the hidden memory "Swing for the Fence", a direct quote of the words Larry said to his little brother.`
+    },
+    {
+        brand: 'nike',
+        name: `Nike Air Max 90 SE`,
+        category: `women's shoe`,
+        description: `Traditional style with a wild touch. The Nike Air Max 90 SE stays true to its roots as a classic style with the iconic Waffle outsole, stitched overlays and classic TPU accents. The patchwork upper is made from an array of richly textured materials and features animal print graphics for an untamable look.`
+    }
+]
+
+
+

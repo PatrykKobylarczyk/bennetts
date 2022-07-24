@@ -16,7 +16,7 @@ import hero4mb from '../../assets/images/hero4.webp';
 import hero4dt from '../../assets/images/hero4dt.webp';
 
 
-const HeroImage = ({ isDesktop }) => {
+const HeroImage = ({ isDesktop, setDisplayedImage }) => {
 
     const heroImagesMobile = [hero1mb, hero2mb, hero3mb, hero4mb]
     const heroImagesDesktop = [hero1dt, hero2dt, hero3dt, hero4dt]
@@ -33,7 +33,24 @@ const HeroImage = ({ isDesktop }) => {
         speed: 1000,
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: false
+        arrows: false,
+        beforeChange: (oldIndex, newIndex) => {
+            switch (oldIndex) {
+                case 0:
+                    setDisplayedImage(newIndex)
+                    break
+                case 1:
+                    setDisplayedImage(newIndex)
+                    break
+                case 2:
+                    setDisplayedImage(newIndex)
+                    break
+                case 3:
+                    setDisplayedImage(newIndex)
+                    break
+                default:
+            }
+        }
     }
 
     return (
