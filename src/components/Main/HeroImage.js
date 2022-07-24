@@ -26,7 +26,7 @@ const HeroImage = ({ isDesktop }) => {
     const settings = {
         className: 'flex',
         infinite: true,
-        dots: true,
+        dots: isDesktop ? true : false,
         lazyLoad: 'progressive',
         autoplay: true,
         autoplaySpeed: 4000,
