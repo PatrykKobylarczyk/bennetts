@@ -1,11 +1,12 @@
-Bennetts - price comparison site.
+# Bennetts - price comparison site.
+
 Home page and a product page on which prices of products from three API addresses are compared.
 (The shared API was causing a CORS error, so I created three JSON files.)
 
-Live
+## Live
 https://patrykkobylarczyk.github.io/bennetts
 
-Built with:
+## Built with:
 ReactJS
 Tailwind
 Framer motion
@@ -14,8 +15,8 @@ React query
 React responsive
 React slick
 
-Status:
+## Status:
 Project is: completed
 
-Author
+## Author
 Patryk Kobylarczyk
